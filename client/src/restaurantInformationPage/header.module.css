@@ -1,0 +1,34 @@
+.container{
+    position: relative;
+    margin-top: 20px;
+    background-color: #181b1d;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.Image{
+    width: 100%;
+    height: 500px;
+    padding-left: 30px;
+    padding-right: 30px;
+    object-fit: cover;
+    background-color: #181b1d;
+    object-position: top;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.Cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 500px;
+    background-color: black;
+    opacity: 0.1;
+    z-index: 2;
+}

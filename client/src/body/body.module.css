@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+.Recommend{
+    border-radius: 10px;
+    position: relative;
+    margin-top: 1.5rem;
+    height: 25rem;
+    background-color: white;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.Carou{
+    display: grid;
+    grid-template-columns:50px 1fr 50px;
+}
+
+
+.Title{
+    color: white;
+    font-family: "Roboto" ; 
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 4vmin;
+    font-size: 1.2rem;
+}
+
+.Recommend > img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    animation-name: moving ;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    z-index: 0;
+    border-radius: inherit;
+    transition: 0.3s all;
+}
+
+@media (max-width:768px) {
+    .Recommend{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+
+@keyframes moving {
+    0% {object-position: 0% 100%;}
+    50% {object-position: 0% 0%;}
+    100%{object-position: 0% 100%;}
+  }
+
+.overLay:hover .RecommendTitle{
+    text-underline-position:below;
+    text-decoration: underline rgb(255, 255, 255);
+
+}
+
+.overLay{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(67, 67, 67, 0.7);
+    z-index: 1;
+    border-radius: inherit;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.RecommendInfo{
+    font-family:"Roboto", sans-serif;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+
+.RecommendTitle{
+    font-size: 2rem;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.RecommendRating{
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.Cost{
+    display: block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.RecommendLocation{
+    color: cadetblue;
+}
+
+.type{
+    display: inline-block;
+    background-color: black;
+    padding: 10px;
+    margin-right: 0.5rem;
+    border-radius: 10px;
+    margin-top: 5px;
+    transition: all 0.3s;
+}
+
+.type:hover{
+    color: rgb(193, 159, 225);
+    padding: 11px;
+    cursor: pointer;
+}
+
+.differentOption{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Header{
+    display: inline-block;
+    color: white;
+    font-family: "Roboto" ; 
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 4vmin;
+    font-size: 1.5rem;
+
+}
+
+.Header div:hover{
+    color:rgb(91, 148, 228) ;
+    text-underline-position:below;
+    text-decoration: underline rgb(91, 148, 228);
+    cursor: pointer;
+}

@@ -1,0 +1,23 @@
+.foot{
+    background-color: black;
+    bottom: 0px;
+    position: sticky;
+    left: 0px;
+    right: 0px;
+}
+
+.contactUs{
+    
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-left: 2vmin;
+    padding-top: 2vmin;
+    padding-bottom: 3vmin;
+}
+
+.contactTitle{
+    font-size: 25px;
+    margin-bottom: 1vmin;
+}

@@ -1,0 +1,274 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700&family=Sawarabi+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+.NavBar{
+    position:sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #9AD877;
+    height: 3.5rem;
+    padding-left: 1rem;
+    padding-right: 1.3rem;
+    font-family: 'Sawarabi Gothic',sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    z-index: 100;
+}
+
+.NavBar div{
+    display: flex;
+    align-items: center;
+}
+
+.Nav{
+    display: flex;
+    height: 100%;
+
+}
+
+@media(max-width: 767px ) {
+    .nav{
+        display: none;
+    }
+    .Nav div{
+        display: none;
+    }
+    .NavBar{
+        font-size: 10px;
+    }
+}
+
+/* restaurant recipes and account nav bar*/
+.Nav div{
+    margin-left: 3rem;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+
+
+/*Logos*/
+
+.lightMode{
+    margin-left: 2rem;
+    height: 50%;
+}
+
+.restLogo{
+    height: 50%;
+    position: absolute;
+    top: 30%;
+    left: -1.5rem;
+}
+
+.discussionLogo{
+    height: 40%;
+    position: absolute;
+    top: 32%;
+    left: -1.9rem;
+}
+
+.accountlogo{
+    height: 45%;
+    position: absolute;
+    top: 30%;
+    left: -1.5rem;
+}
+
+.navLogo{
+    height: 32%;
+    margin-right: 0.2rem;
+}
+
+
+
+.search{
+    height: 20px;
+    margin-left: 10px;
+    padding: 2px;
+    background-color: white;
+}
+
+/*Searchbar*/
+
+.searchBody{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+
+.searchBody input {
+    all:unset;
+    width: 20vmin;
+    appearance: none;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size:medium;
+    margin-top: 2px;
+    margin-left: 10px;
+
+}
+
+/*Hover effect*/
+
+.Nav div div{
+    position: absolute;
+    width: 0px;
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+    bottom: 0px;
+    left: 0px;
+    margin: 0px;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.Nav div:hover div{
+    opacity: 1;
+    width: 100%;
+}
+
+.Logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.3rem;
+    text-align: center;
+
+}
+
+.Logo img{
+    height:7.5rem;
+}
+
+.Title{
+    font-family: 'Roboto',sans-serif;
+    font-size: 2.2rem;
+    margin: 0;
+    font-size: 800;
+    color: white;
+}
+
+.Logo span{
+    color: #9AD877;
+}
+
+.subtitle{   
+    font-family: 'Sawarabi Gothic',sans-serif;
+    color: #BEBEBE;
+}
+
+/*hamburger menu*/
+.hamburger{
+    
+    position: relative;
+    display: block;
+    width: 40px;
+    cursor: pointer;
+    height: 35px;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+
+.hamburger .bar,.hamburger::after,.hamburger::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    margin: 6px 0px;
+    transition: 0.4s;
+    z-index: 2;
+}
+
+.hamburger.isactive::before{
+    transform: rotate(-45deg) translate(-5px,6px);
+
+}
+.hamburger.isactive .bar{
+    opacity: 0;
+}
+
+.hamburger.isactive::after{
+    transform: rotate(45deg) translate(-9px,-8px);
+
+
+}
+
+
+.navMenu{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    /* opacity: 0; */
+    min-height: 100vh;
+    display: block;
+    padding-top: 100px;
+    background-color: black;
+    z-index: 0;
+    transition: 0.4s;
+}
+
+.navMenu.isactive{
+    left: 0;
+}
+
+.navMenu a{
+    text-align: center;
+    display: block;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-decoration: none;
+    color: #9AD877;
+    font-family: 'Roboto',sans-serif;
+    transition: 0.4s;
+}
+
+.navMenu a:hover{
+    background-color: white;
+    color: black;
+}
+
+.show{
+    opacity: 1;
+}
+
+.hide{
+    display: none;
+}
+
+@media (min-width:767px) {
+    .hamburger{
+        display: none;
+    }
+    .navMenu{
+        display: none;
+    }
+}
+
+
+
+/**/
+body{
+    height: 150vh;
+    transition: 0.4s;
+}

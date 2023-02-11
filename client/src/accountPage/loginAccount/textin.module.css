@@ -1,0 +1,10 @@
+#textingBox{
+    height: 300px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

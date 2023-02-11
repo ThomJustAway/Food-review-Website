@@ -1,0 +1,33 @@
+.numberContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.Vote{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+.time{
+    color:#bfbfbf;
+    float: right;
+    margin-right: 10px;
+}
+
+.link{
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.otherLocation{
+    display: flex;
+    padding-bottom: 20px;
+    overflow-x: scroll;
+}
